@@ -5,13 +5,13 @@ import streamlit as st
 import pickle
 import numpy as np
 
-with open('/Users/priyankasingh/Documents/Capstone/gb_model.pkl', 'rb') as file:
+with open('gb_model.pkl', 'rb') as file:
     model = pickle.load(file)
 
-with open('/Users/priyankasingh/Documents/Capstone/encoder.pkl', 'rb') as file:
+with open('encoder.pkl', 'rb') as file:
     encoder = pickle.load(file)
 
-with open('/Users/priyankasingh/Documents/Capstone/scaler.pkl', 'rb') as file:
+with open('scaler.pkl', 'rb') as file:
     scaler = pickle.load(file)
     
 st.title('Alzheimer’s Risk Prediction 🧠')
